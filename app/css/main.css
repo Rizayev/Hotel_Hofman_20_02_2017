@@ -57,10 +57,9 @@ html, body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
   .searchbox form {
     display: -webkit-box;
     display: -webkit-flex;
@@ -73,7 +72,10 @@ html, body {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
 
 .searchbox--input {
   width: 143px;
@@ -131,18 +133,36 @@ html, body {
 .block-2__text {
   margin-bottom: 100px; }
 
-.features {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 70px; }
-
 .features--item {
+  margin-bottom: 50px;
+  text-align: center; }
+  .features--item img {
+    margin-right: 10px; }
+  .features--item span {
+    color: #242424;
+    font-family: Georgia, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 0; }
+
+.block-4 {
+  margin-bottom: 60px; }
+  .block-4 .block-2__h2 {
+    margin-bottom: 60px; }
+
+.our-partners {
+  margin-bottom: 80px; }
+
+.our-partners__h2 {
+  color: #353434;
+  font-family: Georgia, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 30px;
+  margin-bottom: 60px; }
+
+.partners {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -150,11 +170,14 @@ html, body {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
-  .features--item img {
-    margin-right: 10px; }
-  .features--item span {
-    color: #242424;
-    font-family: Georgia, sans-serif;
-    font-size: 24px;
-    font-weight: 400; }
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.footer {
+  background: #353434; }
+
+.footer-info {
+  background: #353434; }
