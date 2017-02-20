@@ -42,7 +42,6 @@ html, body {
   margin-bottom: 200px; }
 
 .searchbox {
-  max-width: 940px;
   margin: 0 auto;
   margin-top: -85px;
   height: 131px;
@@ -128,3 +127,34 @@ html, body {
   .block-2__arrow span {
     color: #aba191;
     font-size: 22px; }
+
+.block-2__text {
+  margin-bottom: 100px; }
+
+.features {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px; }
+
+.features--item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .features--item img {
+    margin-right: 10px; }
+  .features--item span {
+    color: #242424;
+    font-family: Georgia, sans-serif;
+    font-size: 24px;
+    font-weight: 400; }
