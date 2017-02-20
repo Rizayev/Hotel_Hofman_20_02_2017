@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <link rel="stylesheet" href="css/datepicker.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
@@ -45,9 +47,31 @@
     </div>
 </div>
 <header class="header">
-
+    <div class="container">
+        <img src="img/hotel-hoffmann-logo.png" alt="" class="logo">
+    </div>
 </header>
+<div class="header-searchbox">
+    <div class="container">
+        <div class="searchbox">
+            <form action="" method="post" role="form">
+
+                <input type="text" class="searchbox--input datepicker" name="" placeholder="21 listopadu 2016">
+                <input type="text" class="searchbox--input datepicker" name="" placeholder="21 listopadu 2016">
+                <input type="text" class="searchbox--input" name="" placeholder="2">
+                <input type="text" class="searchbox--input" name="" placeholder="0">
+            	<button type="submit" class="searchbox--btn">rezervovat</button>
+            </form>
+        </div>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/datepicker.css">
+<script src="js/bootstrap-datepicker.js"></script>
+
+
+<script src="js/custom.js"></script>
 </body>
 </html>
