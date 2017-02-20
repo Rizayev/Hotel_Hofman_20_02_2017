@@ -9,7 +9,7 @@ $(document).ready(function () {
         today: "Dnes"
     };
     $('.datepicker').focusout(function () {
-        $(this).datepicker('hide');
+        // $(this).datepicker('hide');
     });
     $('.datepicker').datepicker({
         format: "dd/mm/yyyy",
