@@ -15,9 +15,12 @@ html, body {
     padding: 0;
     padding: 5px 18px;
     margin-top: 20px;
-    border: 1px solid transparent; }
+    border: 1px solid transparent;
+    margin-right: 5px; }
     .top-header .nav li a:hover {
       border: 1px solid #aba191; }
+  .top-header .nav .active {
+    border: 1px solid #aba191; }
   .top-header .icon-bar {
     background: #000; }
 
@@ -267,3 +270,43 @@ html, body {
 
 .social .twitter {
   background-position: -61px 0px; }
+
+#aniimated-thumbnials {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  #aniimated-thumbnials img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px; }
+
+.price {
+  border: 1px solid #aba191;
+  padding: 20px; }
+
+.price-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px; }
+
+.price__title, .price__number {
+  color: #353434;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0; }

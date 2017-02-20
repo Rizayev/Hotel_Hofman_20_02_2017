@@ -15,4 +15,8 @@ $(document).ready(function () {
         format: "dd/mm/yyyy",
         language: 'cs'
     });
+
+    $('#aniimated-thumbnials').lightGallery({
+        thumbnail:true
+    });
 });
