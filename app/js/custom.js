@@ -12,7 +12,7 @@ $(document).ready(function () {
         // $(this).datepicker('hide');
     });
     $('.datepicker').datepicker({
-        format: "dd/mm/yyyy",
+        format: "dd.mm.yyyy",
         language: 'cs'
     });
 

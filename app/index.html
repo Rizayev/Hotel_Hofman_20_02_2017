@@ -53,12 +53,14 @@
 <div class="header-searchbox">
     <div class="container">
         <div class="searchbox">
-            <form action="" method="post" role="form">
+            <form action="https://booking.previo.cz/" method="get" role="form">
 
-                <input type="text" class="searchbox--input datepicker" name="" placeholder="21 listopadu 2016">
-                <input type="text" class="searchbox--input datepicker" name="" placeholder="21 listopadu 2016">
+                <!--<input type="text" class="searchbox&#45;&#45;input datepicker" name="arrival" value="03.02.2017 <?=date('d-m-Y')?>" placeholder="Bla Bla">-->
+                <input type="text" class="searchbox--input datepicker" name="arrival" value="03.02.2017" placeholder="Bla Bla">
+                <input type="text" class="searchbox--input datepicker" name="departure" value="03.02.2017" placeholder="Bla bla">
                 <input type="text" class="searchbox--input" name="" placeholder="2">
                 <input type="text" class="searchbox--input" name="" placeholder="0">
+                <input type="hidden" value="731512" name="hotId">
                 <button type="submit" class="searchbox--btn">rezervovat</button>
             </form>
         </div>
