@@ -305,8 +305,36 @@ html, body {
 
 .price__title, .price__number {
   color: #353434;
-  font-family: Georgia;
+  font-family: Georgia, sans-serif;
   font-size: 16px;
   font-weight: 400;
   padding: 0;
   margin: 0; }
+
+.our-contacts {
+  margin-bottom: 50px; }
+  .our-contacts p {
+    font-size: 22px; }
+
+.our-contacts__form {
+  font-family: Georgia, sans-serif; }
+  .our-contacts__form p {
+    font-size: 26px; }
+  .our-contacts__form input, .our-contacts__form textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    padding-left: 15px; }
+  .our-contacts__form textarea {
+    height: 100px;
+    border-color: #ccc;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding-top: 10px;
+    margin-bottom: 0; }
+  .our-contacts__form button {
+    background: #353434;
+    border-color: transparent;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    margin: 0; }
