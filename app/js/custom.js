@@ -17,6 +17,8 @@ $(document).ready(function () {
     });
 
     $('#aniimated-thumbnials').lightGallery({
-        thumbnail:true
+        thumbnail:true,
+        animateThumb: true,
+        showThumbByDefault: false
     });
 });
