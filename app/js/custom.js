@@ -21,4 +21,10 @@ $(document).ready(function () {
         animateThumb: true,
         showThumbByDefault: false
     });
+
+});
+$(document).ready(function () {
+    $('.searchbox--btn').click(function (e) {
+        e.preventDefault();
+    });
 });
