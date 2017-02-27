@@ -61,6 +61,7 @@ html,body
     align-items: center
     justify-content: center
     flex-wrap: wrap
+    position: relative
 
 .searchbox--input
   width: 143px
@@ -76,6 +77,19 @@ html,body
   // Text style for "21"
   font-variant: small-caps
   margin-right: 20px
+  background: url("../img/input-icon.png") no-repeat
+  background-position: 7px 10px
+span.arrival, span.departure
+  color: #7d7d7d
+  font-family: Georgia, sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
+  position: absolute
+  top: -25px
+  left: 50px
+span.departure
+  left: 210px
 .searchbox--btn
   border: 2px solid #353434
   background-color: transparent
@@ -396,3 +410,6 @@ html,body
     width: 100%
     text-align: center
     margin: 0
+.modal-content
+  iframe
+    height: auto !important
