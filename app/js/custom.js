@@ -8,15 +8,14 @@ $(document).ready(function () {
         monthsShort: ["Led", "Úno", "Bře", "Dub", "Kvě", "Čer", "Čnc", "Srp", "Zář", "Říj", "Lis", "Pro"],
         today: "Dnes"
     };
-    $('.datepicker').click(function () {
+    $('.searchbox .datepicker').click(function () {
 
         var ind = $(this).index();
 
         console.log(ind);
-        if ( ind == 0){
-            $('.datepicker').eq(1).datepicker('hide');
-        }else {
-            $('.datepicker').eq(0).datepicker('hide');
+        if ( ind == 1 ){
+        }
+        if ( ind == 3 ){
         }
 
 
@@ -39,6 +38,6 @@ $(document).ready(function () {
         var date1 = $(this).parent().find('input[name="arrival"]').val();
         var date2 = $(this).parent().find('input[name="departure"]').val();
         var url = 'https://booking.previo.cz/?hotId=731512&arrival='+date1+'&departure='+date2;
-        $('.booking').attr('src', url);
+        window.open(url,'_blank');
     });
 });
