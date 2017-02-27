@@ -120,4 +120,6 @@
 
 @media only screen and (max-width: 640px) {
   span.arrival, span.departure {
-    display: block; } }
+    display: block; }
+  .our-contacts p {
+    font-size: 16px; } }
