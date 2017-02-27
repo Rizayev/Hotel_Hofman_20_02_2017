@@ -39,6 +39,6 @@ $(document).ready(function () {
         var date1 = $(this).parent().find('input[name="arrival"]').val();
         var date2 = $(this).parent().find('input[name="departure"]').val();
         var url = 'https://booking.previo.cz/?hotId=731512&arrival='+date1+'&departure='+date2;
-        $('iframe').attr('src', url);
+        $('.booking').attr('src', url);
     });
 });

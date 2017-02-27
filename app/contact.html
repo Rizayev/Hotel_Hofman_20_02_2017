@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/datepicker.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mob.css">
     <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
 </head>
 <body>
@@ -17,6 +18,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10">
+                <div class="top-header__phone visible-xs">
+                    <a href="tel:+420312245783">+420 312 245 783</a>
+                    <a href="tel:+420312245783">+420 778 059 877</a>
+                </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#menu-top" aria-expanded="false">
@@ -30,16 +35,17 @@
                     <ul class="nav navbar-nav">
                         <li><a href="/">uvod <span class="sr-only">(current)</span></a></li>
                         <li><a href="history.html">historie hotelu</a></li>
-                        <li><a href="#otzivi">rezervace</a></li>
+                        <li><a target="_blank" href="https://booking.previo.cz/?hotId=731512">rezervace</a></li>
                         <li><a href="gallery.html">galerie</a></li>
                         <li><a href="price.html">cenik</a></li>
                         <li><a class="active" href="contact.html">kontakt a lokace</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-2 col-xs-12">
+            <div class="col-md-2 col-xs-12 hidden-xs">
                 <div class="top-header__phone">
-                    <a href="tel:+79999999999">+7 999 999 99 99</a>
+                    <a href="tel:+420312245783">+420 312 245 783</a>
+                    <a href="tel:+420312245783">+420 778 059 877</a>
                 </div>
             </div>
         </div>
@@ -53,13 +59,15 @@
 <div class="header-searchbox">
     <div class="container">
         <div class="searchbox">
-            <form action="" method="post" role="form">
+            <form action="#" method="">
 
-                <input type="text" class="searchbox--input datepicker" name="" placeholder="21 listopadu 2016">
-                <input type="text" class="searchbox--input datepicker" name="" placeholder="21 listopadu 2016">
-                <input type="text" class="searchbox--input" name="" placeholder="2">
-                <input type="text" class="searchbox--input" name="" placeholder="0">
-                <button type="submit" class="searchbox--btn">rezervovat</button>
+
+                <span class="arrival">Příjezd</span>
+                <input type="text" class="searchbox--input datepicker" name="arrival" value="<?=date('d.m.Y')?>" autocomplete="off">
+                <span class="departure">Odjezd</span>
+                <input type="text" class="searchbox--input datepicker" name="departure" value="<?=date('d.m.Y', strtotime('+1 days'))?>" autocomplete="off">
+                <input type="hidden" value="731512" name="hotId">
+                <button type="submit" class="searchbox--btn" data-toggle="modal" data-target=".bs-example-modal-lg">rezervovat</button>
             </form>
         </div>
     </div>
@@ -89,7 +97,6 @@
                     <p>Napište nám</p>
 
                     <div class="form-group">
-                        <label for=""></label>
                         <input type="text" class="form-control" name="" placeholder="Vaše jméno">
                         <input type="text" class="form-control" name="" placeholder="Váš e-mail">
                         <textarea name="" cols="30" rows="10" placeholder="Vaše zpráva"></textarea>
