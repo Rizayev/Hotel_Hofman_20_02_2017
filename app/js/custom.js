@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 });
 $(document).ready(function () {
-    $('.searchbox--btn').click(function (e) {
+    $('.searchbox .searchbox--btn').click(function (e) {
         e.preventDefault();
         var date1 = $(this).parent().find('input[name="arrival"]').val();
         var date2 = $(this).parent().find('input[name="departure"]').val();
