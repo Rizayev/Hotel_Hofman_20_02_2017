@@ -116,7 +116,11 @@
     margin-bottom: 50px; }
   .block-2__h2 h2 {
     padding-left: 0;
-    font-size: 26px; } }
+    font-size: 26px; }
+  .features--item {
+    margin: 0 auto; }
+    .features--item img {
+      max-width: 100%; } }
 
 @media only screen and (max-width: 640px) {
   span.arrival, span.departure {

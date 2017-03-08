@@ -1,6 +1,6 @@
 //
 ///* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width: 1200px)
   .top-header .nav li a
     padding: 0 10px
   .top-header__phone a
@@ -9,7 +9,7 @@
     min-height: auto
     padding-bottom: 10px
 ///* Medium Devices, Desktops */
-@media only screen and (max-width : 991px)
+@media only screen and (max-width: 991px)
   .hotels
     padding-bottom: 0
     .hotels--item
@@ -24,7 +24,7 @@
         width: 100%
         height: auto
         border: none
-    .hotels--item .hotels--item__info .hotels--item__info__title,.hotels--item .hotels--item__info .hotels--item__info__list
+    .hotels--item .hotels--item__info .hotels--item__info__title, .hotels--item .hotels--item__info .hotels--item__info__list
       padding: 0
       text-align: center
       margin-bottom: 20px
@@ -33,7 +33,7 @@
     .features
       display: flex
 ///* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width: 768px)
   .features--item
     min-height: 150px
     margin-bottom: 0
@@ -41,7 +41,7 @@
     flex-wrap: wrap
     justify-content: center
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 767px)
+@media only screen and (max-width: 767px)
   .navbar-header
     margin-top: 15px
   .top-header__phone
@@ -69,7 +69,7 @@
     position: static
     display: none
 
-  .features,.partners
+  .features, .partners
     display: flex
     flex-direction: column
     align-items: flex-start
@@ -99,8 +99,15 @@
   .block-2__h2 h2
     padding-left: 0
     font-size: 26px
-@media only screen and (max-width : 640px)
+
+  .features--item
+    margin: 0 auto
+    img
+      max-width: 100%
+
+@media only screen and (max-width: 640px)
   span.arrival, span.departure
     display: block
   .our-contacts p
     font-size: 16px
+
