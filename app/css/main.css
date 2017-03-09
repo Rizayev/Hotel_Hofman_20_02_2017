@@ -508,3 +508,9 @@ span.departure {
 
 .modal-content iframe {
   height: auto !important; }
+
+#hotel2, #hotel3 {
+  display: none; }
+
+.hotels--items .hotels--item:last-child {
+  display: none; }

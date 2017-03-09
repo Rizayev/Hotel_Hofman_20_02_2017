@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mob.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
 </head>
 <body>
@@ -117,7 +118,7 @@
     <div class="container">
         <h2 class="hotels--h2">Dvoulůžkový pokoj s manželskou postelí <br>
             nebo oddělenými postelemi</h2>
-        <div class="hotels--info row">
+        <div id="hotel1" class="hotels--info row">
             <div class="col-md-6">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -184,14 +185,148 @@
                 </div>
             </div>
         </div>
+        <div id="hotel2" class="hotels--info row">
+            <div class="col-md-6">
+                <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/hotels/apart1/gallery/1.jpg" alt="...">
+                            <!--<div class="carousel-caption">-->
+                                <!--Описание-->
+                            <!--</div>-->
+                        </div>
+                        <div class="item">
+                            <img src="img/hotels/apart1/gallery/1.jpg" alt="...">
+                            <!--<div class="carousel-caption">-->
+                                <!--Описание-->
+                            <!--</div>-->
+                        </div>
+                        <div class="item">
+                            <img src="img/hotels/apart1/gallery/1.jpg" alt="...">
+                            <!--<div class="carousel-caption">-->
+                                <!--Описание-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="hotels--description">
+                    2 Posezení, topení, parketová podlaha/koberec,
+                    sprcha, fén, toaletní potřeby, toaleta, koupelna, telefon, rádio, satelitní programy,
+                    Služba buzení, budík
+                </p>
+
+                <div class="hotels--features">
+                    <img src="img/hotels/icons/tv.png" alt="">
+                    <img src="img/hotels/icons/telefon.png" alt="">
+                    <img src="img/hotels/icons/sprh.png" alt="">
+                    <img src="img/hotels/icons/vanna.png" alt="">
+                    <img src="img/hotels/icons/wc.png" alt="">
+                    <img src="img/hotels/icons/fen.png" alt="">
+                    <img src="img/hotels/icons/radiator.png" alt="">
+                </div>
+
+                <div class="hotels--price">
+                    <p class="hotels--price__p1">Cena od</p>
+                    <p class="hotels--price__p2">700 kč <sup>/noc</sup></p>
+                    <a target="_blank" href="https://booking.previo.cz/?hotId=731512&roomType=543432"><button type="submit" class="searchbox--btn">rezervovat</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="hotel3" class="hotels--info row">
+            <div class="col-md-6">
+                <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/hotels/apart1/gallery/1.jpg" alt="...">
+                            <!--<div class="carousel-caption">-->
+                                <!--Описание-->
+                            <!--</div>-->
+                        </div>
+                        <div class="item">
+                            <img src="img/hotels/apart1/gallery/1.jpg" alt="...">
+                            <!--<div class="carousel-caption">-->
+                                <!--Описание-->
+                            <!--</div>-->
+                        </div>
+                        <div class="item">
+                            <img src="img/hotels/apart1/gallery/1.jpg" alt="...">
+                            <!--<div class="carousel-caption">-->
+                                <!--Описание-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="hotels--description">
+                    3 Posezení, topení, parketová podlaha/koberec,
+                    sprcha, fén, toaletní potřeby, toaleta, koupelna, telefon, rádio, satelitní programy,
+                    Služba buzení, budík
+                </p>
+
+                <div class="hotels--features">
+                    <img src="img/hotels/icons/tv.png" alt="">
+                    <img src="img/hotels/icons/telefon.png" alt="">
+                    <img src="img/hotels/icons/sprh.png" alt="">
+                    <img src="img/hotels/icons/vanna.png" alt="">
+                    <img src="img/hotels/icons/wc.png" alt="">
+                    <img src="img/hotels/icons/fen.png" alt="">
+                    <img src="img/hotels/icons/radiator.png" alt="">
+                </div>
+
+                <div class="hotels--price">
+                    <p class="hotels--price__p1">Cena od</p>
+                    <p class="hotels--price__p2">700 kč <sup>/noc</sup></p>
+                    <a target="_blank" href="https://booking.previo.cz/?hotId=731512&roomType=543432"><button type="submit" class="searchbox--btn">rezervovat</button></a>
+                </div>
+            </div>
+        </div>
 
         <div class="row hotels--items">
-            <div class="col-md-6 hotels--item">
+            <div data-hotel="1" class="col-md-6 hotels--item">
                 <img src="img/hotels/apart2/cover.jpg" alt="">
                 <div class="hotels--item__info">
                     <p class="hotels--item__info__title">Jednolůžkový pokoj</p>
                     <p class="hotels--item__info__list">
-                        Posezení, Topení, Parketová podlaha/Koberec, Sprcha, Fén,
+                       1 Posezení, Topení, Parketová podlaha/Koberec, Sprcha, Fén,
                         Toaletní potřeby, Toaleta, Koupelna, Telefon, Rádio, Satelitní programy, Služba buzení, Budík
                     </p>
                 </div>
@@ -201,12 +336,27 @@
                     <a target="_blank" href="https://booking.previo.cz/?hotId=731512&roomType=542636"><button type="submit" class="searchbox--btn">rezervovat</button></a>
                 </div>
             </div>
-            <div class="col-md-6 hotels--item">
+            <div data-hotel="2" class="col-md-6 hotels--item">
+                <img src="img/hotels/apart2/cover.jpg" alt="">
+                <div class="hotels--item__info">
+                    <p class="hotels--item__info__title">Jednolůžkový pokoj</p>
+                    <p class="hotels--item__info__list">
+                        2 Posezení, Topení, Parketová podlaha/Koberec, Sprcha, Fén,
+                        Toaletní potřeby, Toaleta, Koupelna, Telefon, Rádio, Satelitní programy, Služba buzení, Budík
+                    </p>
+                </div>
+                <div class="hotels--price">
+                    <p class="hotels--price__p1">Cena od</p>
+                    <p class="hotels--price__p2">700 kč <sup>/noc</sup></p>
+                    <a target="_blank" href="https://booking.previo.cz/?hotId=731512&roomType=542636"><button type="submit" class="searchbox--btn">rezervovat</button></a>
+                </div>
+            </div>
+            <div data-hotel="3" class="col-md-6 hotels--item">
                 <img src="img/hotels/apart3/cover.jpg" alt="">
                 <div class="hotels--item__info">
                     <p class="hotels--item__info__title">Apartmán</p>
                     <p class="hotels--item__info__list">
-                        Psací stůl, Posezení, Šatna, Parketová podlaha, Vana, Fén, Toaletní potřeby, Toaleta, Koupelna,
+                        3 Psací stůl, Posezení, Šatna, Parketová podlaha, Vana, Fén, Toaletní potřeby, Toaleta, Koupelna,
                         Telefon, Rádio, Satelitní programy, Kuchyňka, Lednička, Jídelna, Služba buzení, Budík
                     </p>
                 </div>

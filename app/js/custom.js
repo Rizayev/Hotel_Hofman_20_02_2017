@@ -31,13 +31,36 @@ $(document).ready(function () {
         showThumbByDefault: false
     });
 
-});
-$(document).ready(function () {
     $('.searchbox .searchbox--btn').click(function (e) {
         e.preventDefault();
         var date1 = $(this).parent().find('input[name="arrival"]').val();
         var date2 = $(this).parent().find('input[name="departure"]').val();
         var url = 'https://booking.previo.cz/?hotId=731512&arrival='+date1+'&departure='+date2;
         window.open(url,'_blank');
+    });
+
+    function hideHotels() {
+        $('#hotel1,#hotel2,#hotel3').hide().addClass('animated pulse');
+    }
+    function hideHotelsitem () {
+        $('.hotels--items > div').hide();
+    }
+    $('.hotels--items').find("[data-hotel='1']").click(function () {
+        hideHotels();
+        $('#hotel1').fadeIn();
+    });
+    $('.hotels--items').find("[data-hotel='2']").click(function () {
+        hideHotels();
+        hideHotelsitem();
+        $('.hotels--items').find("[data-hotel='2']").show().addClass('animated fadeIn');
+        $('.hotels--items').find("[data-hotel='3']").show().addClass('animated fadeIn');
+        $('#hotel2').fadeIn();
+    });
+    $('.hotels--items').find("[data-hotel='3']").click(function () {
+        hideHotels();
+        hideHotelsitem();
+        $('.hotels--items').find("[data-hotel='1']").show().addClass('animated fadeIn');
+        $('.hotels--items').find("[data-hotel='2']").show().addClass('animated fadeIn');
+        $('#hotel3').fadeIn();
     });
 });
