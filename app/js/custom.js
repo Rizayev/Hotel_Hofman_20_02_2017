@@ -47,12 +47,15 @@ $(document).ready(function () {
     }
     $('.hotels--items').find("[data-hotel='1']").click(function () {
         hideHotels();
+        hideHotelsitem();
+        $('.hotels--items').find("[data-hotel='2']").show().addClass('animated fadeIn');
+        $('.hotels--items').find("[data-hotel='3']").show().addClass('animated fadeIn');
         $('#hotel1').fadeIn();
     });
     $('.hotels--items').find("[data-hotel='2']").click(function () {
         hideHotels();
         hideHotelsitem();
-        $('.hotels--items').find("[data-hotel='2']").show().addClass('animated fadeIn');
+        $('.hotels--items').find("[data-hotel='1']").show().addClass('animated fadeIn');
         $('.hotels--items').find("[data-hotel='3']").show().addClass('animated fadeIn');
         $('#hotel2').fadeIn();
     });
