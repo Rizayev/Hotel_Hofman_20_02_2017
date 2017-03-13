@@ -137,18 +137,23 @@ span.departure
   text-align: center
   display: flex
   justify-content: center
-  align-items: center
+  align-items: flex-end
   flex-wrap: wrap
   min-height: 100px
 
   img
     margin-right: 10px
+    height: 40px
   span
     color: #242424
     font-family: Georgia, sans-serif
     font-size: 24px
     font-weight: 400
-
+    line-height: 20px
+.features--item:nth-child(3)
+  span
+    position: relative
+    top: 20px
 
 .hotels
   background: #f7f7f7
@@ -230,7 +235,7 @@ span.departure
 
     line-height: 0
     margin-bottom: 28px
-    font-size: 22px
+    font-size: 20px
   .searchbox--btn
     width: 87px
     height: 17px
@@ -407,6 +412,8 @@ span.departure
   p
     font-size: 26px
     font-family: Georgia, sans-serif
+    span
+      font-family: "GothamProRegular"
 .our-contacts__form
   font-family: Georgia, sans-serif
   p
